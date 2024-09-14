@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+.App
+{
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #fefefe;
+    color: #1f1f1f;
+    height: 100vh;
+}
+header{
+    text-align: center;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 10px 12px;
+    font-weight: 700;
+    background-color: #efefef;
+    color: #1f1f1f;
+}
+table
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #017e01;
+    /* border: none; */
+}
+table thead
+{
+    background-color: #017e01;
+    color: #ffffff;
+    width: 100%;
+}
+table tr{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table tr th{
+    border: none;
+    
+}
+table tr{
+    
+    border-bottom: 1px solid #b1b1b1;
+}
+table tr th, table tr td
+{
+    text-align: left;
+    border: none;
+    padding: 10px 12px;
+    font-size: 18px;
+    line-height: 28px;
+    width: 220px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pagination
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+.pagination button
+{
+    border: none;
+    padding: 10px 12px;
+    background-color: #017e01;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 18px;
+    outline: none;
+    line-height: 28px;
+    cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagination div
+{
+    width: 30px;
+    text-align: center;
+    background-color: #017e01;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 18px;
+    line-height: 28px;
 }
